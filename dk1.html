@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <style>
+        
+        header {
+            background-color: #333;
+            color: rgb(255, 255, 255);
+            border-color: black;
+            border-radius: 5px;
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            padding: 1em;
+            background-image: url(one\ piece/4.jpg);
+        }
+
+        nav {
+            font-family: 'Times New Roman', Times, serif;
+            background-color: #0f0f0f;
+            padding: 0.5em;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 0.5em 1em;
+            margin: 0 1em;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #444;
+        }
+       
+        form {
+            color: #ccc;
+            max-width: 400px;
+            margin: 20px auto;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .d{
+            margin-left: 30%;
+            padding-right: 30%;
+        }
+        button {
+            background-color: #000000;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body style="background-image: linear-gradient(#000080,#333);">
+
+    <header>
+        <h1>ONE PIECE</h1>
+    </header>
+
+    <nav>
+        <center>
+        <a href="dk4.html">Home</a>
+        <a href="https://www.bing.com/ck/a?!&&p=c691477933390bfdJmltdHM9MTcwNjQ4NjQwMCZpZ3VpZD0yOGU1Y2YyNy0yMWFmLTYzZGYtM2YwYy1kYzI3MjAzNDYyMWEmaW5zaWQ9NTMwNA&ptn=3&ver=2&hsh=3&fclid=28e5cf27-21af-63df-3f0c-dc272034621a&psq=one+piece+manga&u=a1aHR0cHM6Ly9tYW5nYXJlYWRlci50by9vbmUtcGllY2UtMz9yZWY9c2VhcmNo&ntb=1">Anime Manga</a>
+        <a href="dk5.html">Characters</a>
+        <a href="dk1.html">Contact Us</a>
+        </center>
+    </nav>
+    <div class="d">
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>
